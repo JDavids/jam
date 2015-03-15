@@ -1,8 +1,5 @@
-<h1>Welcome</h1>
-<p>
-	This is the landing page for techlab, a blog made using Ruby on Rails. 
-</p>
+<% @posts.each do |post| %>
+	<%= render 'posts/post', post: post %>
 
-<p> This page is juat a placeholder. Later on, I will replae it with the posts in my blog.</p>
-
-
+	<br><br><br><br>
+<% end %>
